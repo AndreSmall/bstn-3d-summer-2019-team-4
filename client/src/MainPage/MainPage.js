@@ -1,6 +1,7 @@
 import React from "react";
 import "./MainPage.scss";
 import {locationData} from './data';
+import {Link} from 'react-router-dom';
 
 
 console.log(locationData);
@@ -60,7 +61,7 @@ createResult = (array) => {
           <label className="label">Enter your preferred cuisine</label>
           <input className="input" type="text" name="inputtext" placeholder="Location"></input>
          </div>
-         <button className="button">Search near me</button>
+         <Link to="/restaurant"><button className="button">Search near me</button></Link>
         </div>
       </form>
 
