@@ -1,0 +1,27 @@
+.res{
+    display:flex;
+    background-color: beige;
+    margin: 0 300px;
+    &__list{
+      h1{
+        width:398px;
+        font-family:PlayfairDisplay-Regular;
+      }
+    }
+    &__card{
+      width:440px;
+      height: 150px;
+      background-color:#f1f1f1;
+      border: 0.5px solid rgba(128,128,128,0.3);
+      margin: 5px 5px;
+      border-radius: 5px;
+
+      p {
+        margin: 0;
+      }
+    }
+
+    &__iframe{
+      padding-top: 80px;
+    }
+  }

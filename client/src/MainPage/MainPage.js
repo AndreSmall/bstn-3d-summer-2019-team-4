@@ -45,12 +45,13 @@ createResult = (array) => {
 
 
 
+
   render(){
     return(
       <>
       <form onSubmit={this.whenSubmitted}>
-        <label>Location</label>
-        <input type="text" name="inputtext" placeholder="Location"></input>
+        <label>Cuisine</label>
+        <input type="text" name="inputtext" placeholder="Cuisine"></input>
         <button>Search</button>
       </form>
 
