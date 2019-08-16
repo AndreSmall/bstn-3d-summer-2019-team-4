@@ -18,7 +18,7 @@ const locationData = [
         "inventoryCategories": "Paper, Crafts, Office supplies"
     },
     {
-        "id": "W1",
+        "id": "W0",
         "name": "The Place",
         "address": {
             "street": "667 Some Street W",

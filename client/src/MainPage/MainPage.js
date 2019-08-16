@@ -19,15 +19,16 @@ whenSubmitted = (event) => {
 
 displaySearch = (location) => {
   
-  locationData.map(item => {
-    if (!location === item.id){
-      console.log("this is a test");
-    }
-
-  })
-
+  const result = locationData.filter(item => location === item.id)
+  
+  console.log(result);
+  
   
 }
+
+
+
+
   render(){
     return(
       <>
