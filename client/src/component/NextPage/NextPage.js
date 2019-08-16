@@ -1,5 +1,6 @@
 import React from "react";
 import './NextPage.scss';
+import {Link} from 'react-router-dom';
 
 class Rating extends React.Component{
   render(){
@@ -8,35 +9,43 @@ class Rating extends React.Component{
         <div className="res__list">
         <h1>Great Places Near You</h1>
         <div className='res__card'>
+        <Link to="/restaurant">
           <img/>
           <p>Name</p>
           <p>Location</p>
           <p>Cuisine type</p>
           <p>Rating</p>
+        </Link>
         </div>
         
         <div className='res__card'>
+        <Link to="/restaurant">
           <img/>
           <p>Name</p>
           <p>Location</p>
           <p>Cuisine type</p>
           <p>Rating</p>
+        </Link>
         </div>
 
         <div className='res__card'>
+        <Link to="/restaurant">
           <img/>
           <p>Name</p>
           <p>Location</p>
           <p>Cuisine type</p>
           <p>Rating</p>
+        </Link>
         </div>
 
         <div className='res__card'>
+        <Link to="/restaurant">
           <img/>
           <p>Name</p>
           <p>Location</p>
           <p>Cuisine type</p>
           <p>Rating</p>
+        </Link>
         </div>
       </div>
       <div className="res__iframe">

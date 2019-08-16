@@ -4,7 +4,10 @@ import "./info.scss";
 class Info extends React.Component{
   render(){
     return{
-      <>
+      <> 
+      <div>
+      </div>
+
       </>
     }
   }
