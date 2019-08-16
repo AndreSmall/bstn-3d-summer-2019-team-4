@@ -3,6 +3,9 @@ import "./MainPage.scss";
 import {locationData} from './data';
 
 
+import Card from '@material-ui/core/Card';
+
+
 console.log(locationData);
 
 class Search extends React.Component{
@@ -33,6 +36,7 @@ createResult = (array) => {
  
   const parent = document.querySelector('.search-result');
 
+  
   for (let i = 0; i < array.length; i++) {
 
     const result = document.createElement('div');
@@ -42,12 +46,17 @@ createResult = (array) => {
     parent.appendChild(result);
 
   }
+  
 }
 
 
   render(){
     return(
       <div className="background"> 
+       <div className="finery">
+         FINERY
+       </div>
+
        <div >
              <h2 className="title">Find quality food experiences.</h2>
        </div>
@@ -58,7 +67,7 @@ createResult = (array) => {
         <div className="main-wrapper">
          <div className="wrapper">
           <label className="label">Enter your preferred cuisine</label>
-          <input className="input" type="text" name="inputtext" placeholder="Location"></input>
+          <input className="input" type="text" name="inputtext" placeholder=""></input>
          </div>
          <button className="button">Search near me</button>
         </div>
