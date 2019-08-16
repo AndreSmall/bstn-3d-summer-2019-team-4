@@ -20,12 +20,28 @@ whenSubmitted = (event) => {
 displaySearch = (location1) => {
   
   const result = locationData.filter(item => location1 === item.id)
-  
-  console.log(locationData.name);
-  
+ 
+ 
+  console.log(result);
+
+   this.createResult(result)
   
 }
 
+ 
+createResult = (array) => {
+ 
+  const parent = document.querySelector('.search-result');
+
+  for (let i = 0; i < array.length; i++) {
+
+    const result = document.createElement('div');
+    result.innerHTML = array[i].name;
+    
+    parent.appendChild(result);
+  }
+  
+}
 
 
 
@@ -37,6 +53,10 @@ displaySearch = (location1) => {
         <input type="text" name="inputtext" placeholder="Location"></input>
         <button>Search</button>
       </form>
+
+      <div className="search-result">
+       
+      </div>
       </>
     )
   }
