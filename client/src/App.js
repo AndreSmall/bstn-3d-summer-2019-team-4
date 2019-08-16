@@ -2,7 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import MainPage from './MainPage/MainPage';
-import NextPage from './component/NextPage/NextPage';
+import Rating from './component/NextPage/NextPage';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
 
 
@@ -14,8 +14,7 @@ class App extends React.Component {
       <BrowserRouter>
         <Switch>
           <Route exact path="/" component={MainPage} />
-          {/* <Route path="/restaurant" component={NextPage} />
-          <Route path="/restaurant/:id" component={NextPage} /> */}
+           <Route path="/restaurant" component={Rating} />
       </Switch>
     </BrowserRouter>
   </>
