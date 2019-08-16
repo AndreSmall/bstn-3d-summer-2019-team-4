@@ -2,16 +2,24 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import MainPage from './MainPage/MainPage';
-import Header from "./component/Header/Header";
+import Rating from './component/NextPage/NextPage';
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
 
-function App() {
-  return (
-    <> 
-      <Header/>
-      < MainPage />
-    </>
-    
-  );
+
+class App extends React.Component {
+
+  render(){
+    return (
+      <>
+      <BrowserRouter>
+        <Switch>
+          <Route exact path="/" component={MainPage} />
+           <Route path="/restaurant" component={Rating} />
+      </Switch>
+    </BrowserRouter>
+  </>
+    );
+  }
 }
 
 export default App;
