@@ -12,18 +12,19 @@ class Search extends React.Component{
 whenSubmitted = (event) => {
   event.preventDefault();
 
-  const location = event.target.inputtext.value;
-  this.displaySearch(location);
-  console.log(location);
+  const location1 = event.target.inputtext.value;
+  this.displaySearch(location1);
+  console.log(location1);
 }
 
-displaySearch = (location) => {
+displaySearch = (location1) => {
   
-  const result = locationData.filter(item => location === item.id)
-  
+  const result = locationData.filter(item => location1 === item.id)
+ 
+ 
   console.log(result);
 
-   this.createResult(result);
+   this.createResult(result)
   
 }
 
